@@ -22,10 +22,10 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!'''
 
 # Take your personal email as a second string
-A = 'andrey.lomako@homecredit.net'
+mail = 'andrey.lomako@homecredit.net'
 
 # and concatenate it with L
-C = (L+A)
+C = (L+mail)
 
 # Print the length of L
 print('Length of L: ', len(L))
@@ -46,6 +46,17 @@ u = L[::18]
 print('Each 18th characters are: ', u)
 print('Each 18th character in opposite case: ', u.swapcase())
 
-for c in u:
-        print (u.index(c), c)
+#for c in u:
+ #       print (u.index(c), c)
 
+'''index = 0
+for letter in L:
+    if letter in
+index +=1'''
+
+position = 18
+for letter in L[17::18]:
+    position += 18
+    if letter == '\n':
+        letter = 'NEWLINE detected!!'
+    print(str(position) + letter.swapcase())
